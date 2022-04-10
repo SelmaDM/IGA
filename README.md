@@ -3,7 +3,9 @@
 ## BEZIER CURVES AND SURFACES 
 
 ### COMPILE  
+```
 g++ -o BezierSurface  BezierSurface.cpp  -lglut -lGL -lGLU
+```
 ##### NB : The compilation  output is already present in the directory ./BezierCurve  ./BezierSurface
 
 
@@ -31,7 +33,7 @@ g++ -o BezierSurface  BezierSurface.cpp  -lglut -lGL -lGLU
 
  #### Draw the curve 
 
-```
+```c++
 glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
 ```
 
