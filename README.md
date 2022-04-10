@@ -1,8 +1,9 @@
-# IGA
+# IGAI 2021/2022
 
 ## BEZIER CURVES AND SURFACES 
 
-### COMPILE  
+### HOW TO COMPILE  
+
 ```
 g++ -o BezierSurface  BezierSurface.cpp  -lglut -lGL -lGLU
 NB : The compilation  output is already present in the directory  and can be directly run with  ./BezierCurve  ./BezierSurface
@@ -12,13 +13,14 @@ NB : The compilation  output is already present in the directory  and can be dir
 
 
 ### HOW TO RUN  
-### Bezier Curve
+
+#### Bezier Curve
 		1. run  ./BezierCurve    
 		2. Specify the number of segments 
 		3. Left-Click: To add a point
 		4. Right-Click-and-Drag: To select a point and move it
 
-### Bezier Surface
+#### Bezier Surface
 		1. ./BezierSurface
 		2. Right-Click to display the surface from different perspectives
 
@@ -26,12 +28,12 @@ NB : The compilation  output is already present in the directory  and can be dir
 
 ### FEATURES
 
-### Bezier Curve 
+#### Bezier Curve 
   
   > Cubic bezier curves are generated with glMap1f evaluator,
   > which computes the values for bernstein polynomials of any order
 
-### Main functions
+#### Main functions
 
  #### Draw the curve 
 
@@ -111,8 +113,8 @@ glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 
 
 
-### Sources :
-
+### Sources:
+> The bellow sources helped me better use and understand the OpenGl library
 1. [W3 cs](https://w3.cs.jmu.edu/bernstdh/web/common/lectures)
 2. [educatech](https://educatech.in/opengl-bezier-spline-curve-functions/ )
 3. [GitHub](https://github.com/Hanbiubiu/Bezier-curve-surface)
