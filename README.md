@@ -95,12 +95,12 @@ glMap2f(type, u_min, u_max, u_stride, u_order, v_min, v_max, v_stride, v_order, 
 > grid coordinate i = un exactly to u2
 > 
 ```c++  
-		  glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
+glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
 ```
 > In glEvalMesh2, specifies whether to compute a two-dimensional mesh of points, lines, or polygons. Symbolic 
 > constants GL_POINT, GL_LINE, and GL_FILL are accepted
 ```c++  
-		  glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
+glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 ```
 ## RESULTS 
 
