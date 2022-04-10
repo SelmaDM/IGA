@@ -1,8 +1,8 @@
 # IGAI 2021/2022
 
-## BEZIER CURVES AND SURFACES 
+## Bezier curves and surfaces
 
-### HOW TO COMPILE  
+### How to Compile 
 
 ```
 g++ -o BezierSurface  BezierSurface.cpp  -lglut -lGL -lGLU
@@ -12,7 +12,7 @@ NB : The compilation  output is already present in the directory  and can be dir
 
 
 
-### HOW TO RUN  
+### How to run 
 
 #### Bezier Curve
 		1. run  ./BezierCurve    
@@ -26,24 +26,20 @@ NB : The compilation  output is already present in the directory  and can be dir
 
 
 
-### FEATURES
+### Functionalities
 
 #### Bezier Curve 
   
   > Cubic bezier curves are generated with glMap1f evaluator,
   > which computes the values for bernstein polynomials of any order
 
-#### Main functions
-
  #### Draw the curve 
 
 ```c++
 glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
 ```
-
 #### Draw the polygone
-              
-			  
+ 			  
 ```c++
       // Connect the points (using a piecewise linear curve)
       if (numPoints >= 2) {
@@ -57,14 +53,11 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
         glEnd();
       }
 ```
-### RESULTS 
+#### Results
 
 [![Bezier curve with 200 segments](https://github.com/SelmaDM/IGA/blob/b758b34f005c8bc9d56c6cc0c45b860387e1583c/Bezier_Curve_seg_200.png)
 [![Bezier curve with 10 segments ](https://github.com/SelmaDM/IGA/blob/master/Bezier_curve_seg_10.png)
 
-
-
-			  
 
 ####  Implement evenely spaced points using segment number
 
@@ -86,8 +79,6 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
 >   As with Bézier curves, a Bézier surface is defined by a set of control points. Similar to interpolation in many 	respects, a key difference is that the surface does not, in general, pass through the central control points;
   	rather, it is "stretched" toward them as though each were an attractive force [Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_surface)
    
-
-### Main functions
 > To handle surfaces, we just convert the OpenGL functions from the earlier section above to 2D
 ```c++  
 glMap2f(type, u_min, u_max, u_stride, u_order, v_min, v_max, v_stride, v_order, point_array);
@@ -104,13 +95,13 @@ glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
 ```c++  
 glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 ```
-## RESULTS 
+## Results
 
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/Surface1.png)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/surface2.png)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/Surface3.png)
 
-## STILL WORK IN PROGRESS
+## Still work in progress
 
 1. Rendering
 3. Lighting Management
