@@ -27,7 +27,6 @@ NB : The compilation  output is already present in the directory  and can be dir
 ----------------
 
 ### Functionalities
-----------------
 
 #### Bezier Curve 
   ----------------
@@ -104,10 +103,8 @@ glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/surface2.png)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/Surface3.png)
 
-----------------
 
-## Still work in progress
-----------------
+## Work in progress
 
 1. Rendering
 3. Lighting Management
