@@ -54,8 +54,9 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
       }
 ```
 #### Results
-
+> Segment number = 200
 [![Bezier curve with 200 segments](https://github.com/SelmaDM/IGA/blob/b758b34f005c8bc9d56c6cc0c45b860387e1583c/Bezier_Curve_seg_200.png)
+> Segment number = 10
 [![Bezier curve with 10 segments ](https://github.com/SelmaDM/IGA/blob/master/Bezier_curve_seg_10.png)
 
 
