@@ -24,12 +24,14 @@ NB : The compilation  output is already present in the directory  and can be dir
 		1. ./BezierSurface
 		2. Right-Click to display the surface from different perspectives
 
-
+----------------
 
 ### Functionalities
+----------------
 
 #### Bezier Curve 
-  
+  ----------------
+
   > Cubic bezier curves are generated with glMap1f evaluator,
   > which computes the values for bernstein polynomials of any order
 
@@ -75,6 +77,7 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
   ```
 			
 ### Bezier Surface 
+----------------
 
 >   As with Bézier curves, a Bézier surface is defined by a set of control points. Similar to interpolation in many 	respects, a key difference is that the surface does not, in general, pass through the central control points;
   	rather, it is "stretched" toward them as though each were an attractive force [Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_surface)
@@ -101,13 +104,17 @@ glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/surface2.png)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/Surface3.png)
 
+----------------
+
 ## Still work in progress
+----------------
 
 1. Rendering
 3. Lighting Management
 4. Normal Display
 5. Display uniform curve depending on "segments length"
 
+----------------
 
 ### Sources:
 > The bellow sources helped me better use and understand the OpenGl library
