@@ -77,8 +77,7 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
 			
 ### Bezier Surface 
 >   As with Bézier curves, a Bézier surface is defined by a set of control points. Similar to interpolation in many 	respects, a key difference is that the surface does not, in general, pass through the central control points;
-  	rather, it is "stretched" toward them as though each were an attractive force [Wikipedia]
-	(https://en.wikipedia.org/wiki/B%C3%A9zier_surface)
+  	rather, it is "stretched" toward them as though each were an attractive force [Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_surface)
    
 
 ### Main functions
