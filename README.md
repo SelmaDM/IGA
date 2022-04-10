@@ -25,11 +25,10 @@ NB : The compilation  output is already present in the directory  and can be dir
 		2. Right-Click to display the surface from different perspectives
 
 ----------------
-
 ### Functionalities
+  ----------------
 
 #### Bezier Curve 
-  ----------------
 
   > Cubic bezier curves are generated with glMap1f evaluator,
   > which computes the values for bernstein polynomials of any order
