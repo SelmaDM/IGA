@@ -85,7 +85,17 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
    
 
 ### Main functions
-  
+ > To handle surfaces, we just convert the OpenGL functions from the earlier section above to 2D
+```c++  
+glMap2f(type, u_min, u_max, u_stride, u_order, v_min, v_max, v_stride, v_order, point_array);
+```
+```c++  
+glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
+```
+
+```c++  
+glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
+``` 
 
 
 ## RESULTS 
