@@ -115,7 +115,7 @@ glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 1. Rendering
 3. Lighting Management
 4. Normal Display
-5. Display uniform curve using "same lenght segment"
+5. Display uniform curve with depending on "segments length"
 
 
 ### Sources:
