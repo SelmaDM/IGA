@@ -110,7 +110,12 @@ glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/surface2.png)
 [![Bezier Surface ](https://github.com/SelmaDM/IGA/blob/master/Surface3.png)
 
+## STILL WORK IN PROGRESS
 
+1. Rendering
+3. Lighting Management
+4. Normal Display
+5. Display uniform curve using "same lenght segment"
 
 
 ### Sources:
