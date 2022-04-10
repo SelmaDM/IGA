@@ -80,23 +80,27 @@ glMap1f(GL_MAP1_VERTEX_3, umin, umax, stride, polynomialdegree, controlepoints);
   ```
 			
 ### Bezier Surface 
+
 >   As with Bézier curves, a Bézier surface is defined by a set of control points. Similar to interpolation in many 	respects, a key difference is that the surface does not, in general, pass through the central control points;
   	rather, it is "stretched" toward them as though each were an attractive force [Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_surface)
    
 
 ### Main functions
- > To handle surfaces, we just convert the OpenGL functions from the earlier section above to 2D
+> To handle surfaces, we just convert the OpenGL functions from the earlier section above to 2D
 ```c++  
 glMap2f(type, u_min, u_max, u_stride, u_order, v_min, v_max, v_stride, v_order, point_array);
 ```
+
+> glMapGrid2 specifies two such linear mappings. One maps integer grid coordinate i = 0 exactly to u1, and integer 
+> grid coordinate i = un exactly to u2
+> 
 ```c++  
-glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
+		  glMapGrid2f(u_steps,u_min,u_max,v_steps,v_min,v_max)
 ```
-
+> In glEvalMesh2, specifies whether to compute a two-dimensional mesh of points, lines, or polygons. Symbolic 
+> constants GL_POINT, GL_LINE, and GL_FILL are accepted
 ```c++  
-glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
-``` 
-
+		  glEvalMesh2(GL_FILL,u_start,u_stop,v_start,v_stop)
 
 ## RESULTS 
 
